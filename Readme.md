@@ -1,4 +1,4 @@
-** Jogo de Advinha Completo**
+h3 Jogo de Advinha Completo**
  - Numero Gerado Aleátorio
  - Numero de Tentativas ilimitado
  - Segredo no Console.log
