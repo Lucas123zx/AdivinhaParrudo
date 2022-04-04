@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+    <button>Clica Aqui Porra!!!</button>
+    <script>
+        
+        function sorteia(){
+            return Math.round(Math.random()* 10);
+        }
+
+        function numeroSorteiado(quantidade){
+
+            var segredos = [];
+            var numero = 1;
+            
+
+            while(numero < quantidade){
+
+                var numeroAleatorio = sorteia();
+                var achou = false;
+
+                for(var posicao = 0; posicao <segredos.length; posicao++){
+                    
+                };
+
+                if(achou == false){
+
+                    segredos.push(numeroAleatorio);
+                }
+               
+            }
+            return segredos;
+        }
+
+        var segredos = numeroSorteiado(5);
+        segredos.push(sorteia());   
+
+        console.log(segredos);
+
+        var entrada = document.querySelector("input");
+        entrada.focus();  
+
+       
+        function verifica(){
+
+            var achou = false;
+            
+            for(var posicao = 0; posicao < segredos.length; posicao++){
+                
+                if(entrada.value == segredos[posicao]){
+                    achou = true;
+                    alert("Você Acertou!!");
+                    break;
+                }
+            }
+            if(achou == false){
+                alert("Você Errou!!")
+            }
+                entrada.value = "";
+                entrada.focus();
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+</script>
+</body>
+</html>
