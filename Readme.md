@@ -2,3 +2,4 @@
  - Numero Gerado Aleátorio
  - Numero de Tentativas limitado a 5 tentativas
  - Segredo no Console.log
+ - Att para exercício da Dio
